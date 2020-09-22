@@ -8,8 +8,6 @@ glob2==0.7
 imagesize==1.2.0
 numpy==1.18.5
 path==13.1.0
-Pillow @ file:///C:/ci/pillow_1594304973959/work
-SQLAlchemy @ file:///C:/ci/sqlalchemy_1593446777599/work
 tables==3.6.1
 urllib3==1.25.9
 Werkzeug==1.0.1
