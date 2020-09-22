@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title>dashboard</title>
+	<link rel="stylesheet" href="{{url_for('.static', filename='dashboard.css')}}">
+</head>
+<body>
+	 <div id="container">
+			<div id="header">
+				<h1>Welcome, {{ name }}</h1>
+				<ul class="nav">
+					<li><a href="{{ url_for('logout') }}">Log Out</a></li>
+				<ul>
+			</div>
+		
+			<div id="content">
+				
+				<div id="main">
+					<h2>How To Process Image</h2>
+				<p>
+					Step 1:Upload Image<br><br>
+					Step 2:Click on Encryption Button<br><br>
+					Step 3:Click on Decryption Button<br><br>
+					Step 4:Download Image<br><br>
+				</p>
+				</div>
+	
+				<form action="/success" method="POST" enctype="multipart/form-data">
+				<input type="file" required name="file"/>
+				<input type="submit" class="btn1" value="Upload">
+				</form>
+				<a class="btn" href="{{url_for('encryption')}}">Encryption</a><br><br>
+				<a class="btn" href="{{url_for('decryption')}}">Decryption</a>
+			</div>
+			<div id="footer">
+			 All Copyrights &copy are reserved.
+			</div>
+		</div>
+		   
+</body>
+</html>

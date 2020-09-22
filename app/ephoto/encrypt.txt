@@ -1,0 +1,1 @@
+Encrypted images get stored in this folder

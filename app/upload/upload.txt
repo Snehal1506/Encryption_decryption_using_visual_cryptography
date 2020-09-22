@@ -1,0 +1,1 @@
+Uploaded Images get stored in this folder
